@@ -37,7 +37,12 @@
   }
 }
 
+.list-group{
+  justify-content: center;
+}
+
 .list-group-horizontal{
   justify-content: center;
   margin: 10px;
+  flex-wrap: wrap;
 }
