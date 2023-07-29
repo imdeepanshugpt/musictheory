@@ -4,14 +4,42 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { useState } from "react";
 
 function Scales() {
-  const [scale, setScale] = useState('');
-  const [scales, setScales] = useState([]);
+  const [scale, setScale] = useState(null);
+  const [relative, setRelative] = useState("");
+  const [notesOfScale, setNotesOfScale] = useState([]);
   const [chords, setChords] = useState([]);
+
+  
   let notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
   let majorScale = ["T", "T", "S", "T", "T", "T", "S"];
   let minorScale = ["T", "S", "T", "T", "S", "T", "T"];
   let chordFamily = ["M", "m", "m", "M", "M", "m", "M"];
-  const generateScales = (note, scale) => {
+
+
+  const generateChordFamily = (scale_notes) => {
+      let chords = [];
+      chordFamily.forEach((chord, index) => {
+        if (chord === "M") {
+          if (index === 6) {
+            chords.push(scale_notes[index] + " dim");
+          } else {
+            chords.push(scale_notes[index]);
+          }
+        } else if (chord === "m") {
+          chords.push(scale_notes[index] + "m");
+        }
+      });
+      setChords(chords);
+  };
+  const generateRelativeScale = (scale_notes, scale) => {
+    if (scale === "major") {
+      setRelative(scale_notes[5] + " minor");
+    } else {
+      setRelative(scale_notes[2] + " major");
+    }
+  };
+
+  const getNotesInScale = (note, scale) => {
     let index = notes.indexOf(note);
     if (index === -1) {
       return [];
@@ -30,17 +58,27 @@ function Scales() {
         scale_notes.push(notes[index]);
       }
     });
-    let chords = [];
-    chordFamily.forEach((chord, index) => {
-      if(chord === 'M'){
-        chords.push(scale_notes[index]);
-      } else if(chord === 'm') {
-        chords.push(scale_notes[index] +"m");
-      }
-    })
-    setScales(scale_notes);
-    setChords(chords);
-    setScale(note + " " + scale);
+    return scale_notes;
+  };
+  const generateScales = (note, scale) => {
+    console.log("generate scale")
+    const scale_notes = getNotesInScale(note, scale);
+    /**
+     * This will generate chord family
+    */
+   setNotesOfScale(scale_notes);
+   setScale({note, scale});
+   if(scale === 'major'){
+     generateChordFamily(scale_notes);
+   }
+
+   if(scale === 'minor'){
+    const major_scale = scale_notes[2];
+    const major_scale_notes = getNotesInScale(major_scale, "major");
+    generateChordFamily(major_scale_notes);
+   }
+
+   generateRelativeScale(scale_notes, scale);
   };
   return (
     <>
@@ -73,13 +111,14 @@ function Scales() {
           ))}
         </Dropdown.Menu>
       </Dropdown>
-      <h3>Notes in {scale} Scale</h3>
+      { scale ? <h3>Notes in {scale?.note} {scale?.scale} Scale</h3> : ''}
       <ListGroup horizontal>
-        {scales.map((scale, index) => (
+        {notesOfScale.map((scale, index) => (
           <ListGroup.Item key={index}>{scale}</ListGroup.Item>
         ))}
       </ListGroup>
-      <h3>Chords Family</h3>
+      { relative ? <h3>Relative scale is {relative}</h3> : ''}
+     { chords.length ? <h3>Chords Family</h3> : ''}
       <ListGroup horizontal>
         {chords.map((chord, index) => (
           <ListGroup.Item key={index}>{chord}</ListGroup.Item>
