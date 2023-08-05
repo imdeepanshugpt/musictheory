@@ -2,7 +2,7 @@
   "name": "music",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://imdeepanshugpt.github.io/musictheory",
+  "homepage": "https://musictheory-tau.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   }
 }
