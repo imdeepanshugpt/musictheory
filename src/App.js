@@ -1,6 +1,6 @@
-import './App.css';
-import Header from './components/Navbar';
-import Scales from './components/Scales';
+import "./App.css";
+import Header from "./components/Navbar";
+import Scales from "./components/Scales";
 
 function App() {
   return (
