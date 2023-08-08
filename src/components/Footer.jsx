@@ -1,25 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer
       className="text-center text-lg-start text-white"
-      style={{ backgroundColor: "#45526e" }}
+      style={{ backgroundColor: "#102C57" }}
     >
       <div className="container p-4 pb-0">
         <section className="">
           <div className="row">
             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">
-                Company name
+                Guitar Music Theory
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Free website to learn about guitar music theory.
               </p>
             </div>
 
@@ -28,16 +31,16 @@ const Footer = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
               <p>
-                <a className="text-white">MDBootstrap</a>
+                <a className="text-white">Acoustic Guitar</a>
               </p>
               <p>
-                <a className="text-white">MDWordPress</a>
+                <a className="text-white">Electric Guitar</a>
               </p>
               <p>
-                <a className="text-white">BrandFlow</a>
+                <a className="text-white">Classical guitar</a>
               </p>
               <p>
-                <a className="text-white">Bootstrap Angular</a>
+                <a className="text-white">Bass guitar</a>
               </p>
             </div>
 
@@ -85,10 +88,10 @@ const Footer = () => {
         <section className="p-3 pt-0">
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8 text-center text-md-start">
-              <div className="p-3">
-                © 2020 Copyright:
-                <a className="text-white" href="https://mdbootstrap.com/">
-                  MDBootstrap.com
+              <div className="p-3 text-white">
+                © 2023 Copyright:
+                <a className="text-white" href="https://musictheory-tau.vercel.app/">
+                  https://musictheory-tau.vercel.app
                 </a>
               </div>
             </div>
@@ -99,26 +102,25 @@ const Footer = () => {
                 role="button"
               >
                 <FontAwesomeIcon icon={faFacebook} />
-                <i className="fab fa-facebook-f"></i>
               </a>
 
               <a
                 className="btn btn-outline-light btn-floating m-1 text-white"
                 role="button"
               >
-                <i className="fab fa-twitter"></i>
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
                 className="btn btn-outline-light btn-floating m-1 text-white"
                 role="button"
               >
-                <i className="fab fa-google"></i>
+                <FontAwesomeIcon icon={faYoutube} />
               </a>
               <a
                 className="btn btn-outline-light btn-floating m-1 text-white"
                 role="button"
               >
-                <i className="fab fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
           </div>

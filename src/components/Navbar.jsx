@@ -7,13 +7,13 @@ function Header() {
   return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#">Music Theory</Navbar.Brand>
+          <Navbar.Brand href="#">Guitar Music Theory</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link>Home</Nav.Link>
               <Nav.Link>Lessons</Nav.Link>
-              <NavDropdown title="Learn more" id="basic-nav-dropdown">
+              <NavDropdown title="Learn more" id="basic-nav-dropdown" className="ml-auto">
                 <NavDropdown.Item>Chords & Scales</NavDropdown.Item>
                 <NavDropdown.Item>Ear Training</NavDropdown.Item>
                 <NavDropdown.Item>Song Analysis</NavDropdown.Item>

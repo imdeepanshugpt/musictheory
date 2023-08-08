@@ -43,6 +43,7 @@
   background: #efe1d1;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 85%;
   padding: 10px;
   border: solid 3px black;
@@ -56,24 +57,27 @@
   color: black;
 }
 
-.nav-bg {
-  background: #ffefba; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffffff,
-    #ffefba
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    #ffefba
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .footer-copyright {
-  background-color: rgba(0, 0, 0, 0.05);
+  /* background-color: #102C57; */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .page-footer {
-  color: #757575
+  color: #757575;
+}
+
+.bg-body-tertiary, .dropdown-menu{
+  background-color: #EADBC8 !important;
+}
+
+footer{
+  padding-top: 10px;
+  margin-top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* position: fixed; */
+  width: 100%;
 }
