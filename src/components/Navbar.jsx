@@ -5,7 +5,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
   return (
-    <Container>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#">Music Theory</Navbar.Brand>
@@ -14,7 +13,7 @@ function Header() {
             <Nav className="me-auto">
               <Nav.Link>Home</Nav.Link>
               <Nav.Link>Lessons</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown title="Learn more" id="basic-nav-dropdown">
                 <NavDropdown.Item>Chords & Scales</NavDropdown.Item>
                 <NavDropdown.Item>Ear Training</NavDropdown.Item>
                 <NavDropdown.Item>Song Analysis</NavDropdown.Item>
@@ -27,7 +26,6 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Container>
   );
 }
 

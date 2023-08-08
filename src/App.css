@@ -2,8 +2,6 @@
   text-align: center;
 }
 
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,21 +26,21 @@
   }
 }
 
-.list-group{
+.list-group {
   justify-content: center;
 }
 
-.list-group-horizontal{
+.list-group-horizontal {
   justify-content: center;
   margin: 10px;
   flex-wrap: wrap;
 }
 
-.heading-3{
+.heading-3 {
   color: olivedrab;
 }
 .result {
-  background: #EFE1D1;
+  background: #efe1d1;
   margin: auto;
   margin-top: 10px;
   width: 50%;
@@ -50,11 +48,32 @@
   border: solid 3px black;
 }
 
-
-.dropdown-all{
+.dropdown-all {
   margin: 10px;
 }
 
-.p-3{
+.p-3 {
   color: black;
+}
+
+.nav-bg {
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer-copyright {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.page-footer {
+  color: #757575
 }
