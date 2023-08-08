@@ -2,7 +2,7 @@
   "name": "music",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://imdeepanshugpt.github.io/musictheory",
+  "homepage": "https://musictheory-tau.vercel.app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   }
 }
