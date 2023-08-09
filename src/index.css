@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F8F0E5;;
+  background-color: #F8F0E5;
 }
 
 code {
@@ -18,4 +18,9 @@ code {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+@font-face {
+  font-family: logo-font;
+  src: url(../public/assets/font/ZilapMonograma-L2J4.ttf);
 }
