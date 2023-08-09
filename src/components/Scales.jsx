@@ -1,5 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import ListGroup from "react-bootstrap/ListGroup";
+import CProgression from "./CProgression";
 
 import { useState } from "react";
 
@@ -121,6 +122,7 @@ function Scales() {
               <ListGroup.Item key={index}>{scale}</ListGroup.Item>
             ))}
           </ListGroup>
+          <CProgression chords={notesOfScale} />
           {relative ? (
             <p className="p-3">
               Relative scale is <b>{relative}</b>
