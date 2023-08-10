@@ -68,11 +68,12 @@
   color: #757575;
 }
 
-.bg-body-tertiary, .dropdown-menu{
-  background-color: #F8F0E5 !important;
+.bg-body-tertiary,
+.dropdown-menu {
+  background-color: #f8f0e5 !important;
 }
 
-footer{
+footer {
   padding-top: 10px;
   margin-top: auto;
   left: 0;
@@ -84,4 +85,12 @@ footer{
 
 .navbar-brand {
   font-family: logo-font;
+}
+
+.svg-inline--fa:hover {
+  background: gray;;
+}
+
+.btn:hover {
+  background-color: red;
 }
