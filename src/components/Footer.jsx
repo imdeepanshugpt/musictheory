@@ -67,13 +67,13 @@ const Footer = () => {
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
               <p>
-                <i className="fas fa-home mr-3"></i>  Gondia, Maharashtra
+                <i className="fas fa-home mr-3"></i>  Jaipur, Rajasthan
               </p>
               <p>
-                <i className="fas fa-envelope mr-3"></i> G2music2411@gmail.com
+                <i className="fas fa-envelope mr-3"></i> deepanshugupta.jaipur@gmail.com
               </p>
               <p>
-                <i className="fas fa-phone mr-3"></i> + 91 914 674 3749
+                <i className="fas fa-phone mr-3"></i> + 91 XXX XXX XXX
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                 >
                   Deepanshu Gupta
                 </a>
-                &nbsp; | Powered by &nbsp;
+                {/* &nbsp; | Powered by &nbsp;
                 <a
                   className="text-white"
                   target="_blank"
@@ -101,7 +101,7 @@ const Footer = () => {
                   href="https://www.instagram.com/g2.music_/"
                 >
                   Jitu Matani
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -128,7 +128,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="btn btn-outline-light btn-floating m-1 text-white"
                 role="button"
-                href="https://www.youtube.com/@g2musicacademy488"
               >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
@@ -137,7 +136,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="btn btn-outline-light btn-floating m-1 text-white"
                 role="button"
-                href="https://www.instagram.com/g2.music_/"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
